@@ -15,7 +15,7 @@ public class Box {
 		this.tasks.add(task);
 	}
 
-	public Task geTask(String name) {
+	public Task getTask(String name) {
 		for(Iterator i = this.tasks.iterator(); i.hasNext();) {
 			Task task = (Task) i.next();
 			if(task.getName().equals(name)) {
@@ -26,7 +26,7 @@ public class Box {
 	}
 
 
-	public List getTask() {
+	public List getTasks() {
 		return tasks;
 	}
 	public List search(TaskProperty searchProperty) {
@@ -35,7 +35,7 @@ public class Box {
 		for(Iterator i = this.tasks.iterator() ; i.hasNext();) {
 			Task task = (Task) i.next();
 
-			if(task.geTaskProperty().matches(searchProperty))
+			if(task.getTaskProperty().matches(searchProperty))
 				matchingTasks.add(task);
 			}
 		return matchingTasks;

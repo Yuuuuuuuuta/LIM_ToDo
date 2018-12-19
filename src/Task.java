@@ -15,7 +15,7 @@ public class Task {
 	public String getDescription() {
 		return description;
 	}
-	public TaskProperty geTaskProperty() {
+	public TaskProperty getTaskProperty() {
 		return properties;
 	}
 
